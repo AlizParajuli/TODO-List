@@ -34,7 +34,7 @@ namespace TodoList.API.Controllers
         {
             _context.ToDoItems.Add(item);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(GetItemById), new { id = item.Id }, item);
+            return CreatedAtAction(nameof(GetItemById), new { id = item.Id },item);
         }
 
         [HttpPut("{id}")]
